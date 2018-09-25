@@ -19,11 +19,23 @@
     android:layout_height="match_parent"
     android:background="#bb7700">
 
-    <com.example.android.tflitecamerademo.AutoFitTextureView
-        android:id="@+id/texture"
+    <FrameLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_weight="1" />
+        android:layout_height="match_parent">
+
+        <com.example.android.tflitecamerademo.AutoFitTextureView
+            android:id="@+id/texture"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <SurfaceView
+            android:id="@+id/surface"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+
+    </FrameLayout>
 
     <LinearLayout
         android:layout_width="wrap_content"
